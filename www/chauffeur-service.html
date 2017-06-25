@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bocar.SG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/fav.png" />
+<link rel="image_src" href="images/logo_share.png" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/main8fa7.css?v=18" />
+
+<!--[if lt IE 9]> 
+		<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen" />
+		<script type="text/javascript" src="/js/vendor/es5-shim.min.js"></script>
+	<![endif]-->
+<script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery-ui-custom.min.js"></script>
+<script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/vendor/selectize.min5e1f.js?v=2"></script>
+<script type="text/javascript" src="js/vendor/moment.min.js"></script>
+<script type="text/javascript" src="js/plugins3860.js?v=1"></script>
+<script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/mainf500.js?v=13"></script>
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="js/vendor/slick.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script type="text/javascript" src="js/vendor/picturefill.min.js"></script>
+<script type="text/javascript" src="js/dateformat.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var isOnline=false;
+var hasSurvey=false;
+checkFeedbackWidth();
+$zopim(function() {
+	//$zopim.livechat.button.setHideWhenOffline(true);
+	$zopim.livechat.window.hide();
+
+	if($('#feedback_button').length  > 0){
+		hasSurvey=true;
+	}
+	
+	$zopim.livechat.setOnStatus(chefOnline);
+	$zopim.livechat.setOnUnreadMsgs(chefNotify);
+	function chefOnline(status){
+		if (status == 'online' || status == 'away')
+		{
+			isOnline=true;
+			$zopim.livechat.button.show();
+    		if(hasSurvey) { 
+    			$('#feedback_button').hide();
+    		}
+		}else{
+			isOnline=false;
+			$zopim.livechat.button.hide();
+			//make sure gone
+			$zopim.livechat.window.hide();
+			if(hasSurvey) { 
+    			checkFeedbackWidth();
+    		}
+		}
+	}
+	function chefNotify(number){
+		if(isOnline && number>0){
+			$zopim.livechat.window.show();
+		}
+	}
+  });
+  
+$( window ).bind('resize', function() {
+	checkFeedbackWidth();
+});
+
+function checkFeedbackWidth(){
+	if($(window).width()<1000){
+		  $( "#feedback_button" ).hide();
+	}else{
+		  if(!isOnline){
+		  	$( "#feedback_button" ).show();
+		  }else{
+			$( "#feedback_button" ).hide();
+		  }
+	}
+}
+/* ]]> */
+</script>
+
+<!-- SEO canonical tag -->
+<link rel="canonical" href="chauffeur-service.html" />
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600,600italic,700italic,700,900' rel='stylesheet' type='text/css'>
+<style>
+.date_error {
+	color: #FF2E63;
+	font-weight: 400;
+	display:none;
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PRS58W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PRS58W');</script> 
+<script type="text/javascript">
+		var useremail = '';
+	var user_id ='';
+		window.dataLayer = window.dataLayer || [];
+	dataLayer.push({'email': useremail,'userId':user_id});		
+</script> 
+<!-- End Google Tag Manager --><!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="header-container">
+  <header class="header contain clearfix"> <a class="logo header-logo" href="index.html"> <img class="mobile-hidden" src="images/logo1.png" alt="" /> <img class="mobile-visible" src="images/logo1.png" alt="Bocar.SG"/> </a>
+    <div class="mobile-hidden">
+      <div class="subNav header-nav">
+        <nav class="mainNav header-nav">
+          <ul>
+            <li><a href="#"><img src="images/about.png" alt="" /> About Us</a></li>
+            <li><a href="login.html"><img src="images/login.png" alt="" /> Log in</a></li>
+            <li><a href="register.html"><img src="images/sign-up.png" alt="" /> Sign Up Free</a></li>
+            <li><a href="browse-rental-cars.html"><img src="images/browse.png" alt="" /> Browse</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="mobile-visible"> <a class="mobileNav-toggle js-mobileNav-toggle" href="#"><span class="icon icon--close"></span></a> </div>
+  </header>
+</div>
+<div class="mobileNav">
+  <div class="mobileNav-header">
+    <ul class="mobileNav-public mobileNav-menu">
+      <li><a href="login.html">Log In</a></li>
+      <li><a href="register.html">Sign Up for Free</a></li>
+    </ul>
+  </div>
+  <div class="mobileNav-main">
+    <ul class="mobileNav-menu">
+      <li><a href="index.html" id="mobile_home_link" >Home</a></li>
+      <li><a href="browse.html" id="mobile_shortterm_link" >Browse</a></li>
+      <li><a href="#" id="mobile_chauffeur_link">Chauffeur Service</a></li>
+      <li><a href="#" id="mobile_longterm_link">Long Term Car Leasing</a></li>
+      <li><a href="#">For New Bocarr</a></li>
+      <li><a href="#">For Your Wedding</a></li>
+      <li><a href="#">Supercar</a></li>
+      <li><a href="#">Bocar to Malaysia</a></li>
+      <li><a href="#">Promo</a></li>
+      <li class="mobileNav-section">Customer Service
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Quick Payment</a></li>
+        </ul>
+      </li>
+      <li class="mobileNav-section">We're Bocar.SG
+        <ul>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="#">Rewards Program</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="mobileNav-footer">
+    <div class="mobileNav-footer-title">Need Help?</div>
+    <ul class="footer-enquirylist footer-subsection">
+      <li class="footer-contactheaders"><b>For General Enquiries</b><br/>
+        Weekdays 10am to 7pm:</li>
+      <li><a href="#"><span class="footer-contactlink" style="text-decoration: underline;">Contact Us Here</span></a></li>
+    </ul>
+    <ul class="footer-subsection">
+      <li class="footer-contactheaders"><b>For Emergency Services</b><br/>
+      </li>
+      <li><span class="footer-contacttext">(+65) 9999 - 9999</span></li>
+    </ul>
+    <br/>
+    <div class="mobileNav-footer-title">Follow us! We're friendly:</div>
+    <ul class="socialList">
+      <li><a title="Facebook" href="#"></span></a></li>
+      <li><a title="Twitter" href="#"></span></a></li>
+      <li><a title="Instagram" href="#"></span></a></li>
+      <li><a title="Youtube" href="#"></span></a></li>
+      <li><a title="Google+" href="#"></span></a></li>
+    </ul>
+    <p class="tiny">Copyright 2014-2016 © BoCar.sg</p>
+  </div>
+</div>
+<!-- Start of #main-container -->
+<div class="main-container"  id="page-chauffeur">
+  <div class="breadcrumbs">
+    <div class="contain">
+      <ul class="breadcrumbs-login">
+        <li><a href="login.html">Log in</a> </li>
+        <li><a href="register.html">Sign Up</a> </li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chauffeur-service.html">Chauffeur Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="pageBanner">
+    <div class="pageBanner-panel">
+      <h1 class="h2 pageBanner-panel-title">Chauffeur Service</h1>
+      <h4 class="pageBanner-panel-subtitle">Let Bocar.SG do the driving for you</h4>
+      <p>You and your guests are engaged in a lively exchange. Our chauffeur is at your service. We ensure that you and your guests are ushered to your destination in class, style and absolute comfort.</p>
+      <a href="#chauffeur-cars" class="button button--pri button--lg button--block">Find Cars</a> </div>
+  </div>
+  <div class="main clearfix" id="chauffeur-cars">
+    <div class="l-browse-cards contain">
+      <ul class="l-browse-list l-browse-list--4 js-selectionWidget-list js-selectionWidget-chauffeur">
+        <li> <a href="#" class="card js-card" data-id="Mercedes Benz S-Class" data-model="Mercedes Benz S-Class">
+          <figure class="card-figure"> <img src="images/chauffeur-mercedes-benz-s350.jpg" alt="Mercedes Benz S-Class Picture"/> </figure>
+          <div class="card-body">
+            <h4 class="card-title">Mercedes Benz S-Class</h4>
+            <div class="card-features">
+              <ul>
+                <li><span class="icon icon--passenger"></span>3 Guests</li>
+                <li><span class="icon icon--luggage"></span>2 Large 2 Small</li>
+              </ul>
+            </div>
+            <div class="card-pricing">
+              <div class="card-pricing-block">
+                <div class="small">Hourly</div>
+                <div class="card-pricing-value">$<span class="card-hourly">107.00</span></div>
+              </div>
+              <div class="card-pricing-block">
+                <div class="small">One Way</div>
+                <div class="card-pricing-value">$<span class="card-pertrip">107.00</span></div>
+              </div>
+              <div class="seasonal-price-block" style="display:none">
+                <div class="price-title">2016 F1 Singapore Grand Prix</div>
+                <div class="card-seasonal-disposal">120.00</div>
+                <div class="card-seasonal-transfer">120.00</div>
+                <div class="minhours">10</div>
+                <div class="startSeason">Sept 14, 2016</div>
+                <div class="endSeason">Sept 19, 2016</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-button"> <span class="icon icon--tick"></span> Select </div>
+          </a> </li>
+        <li> <a href="#" class="card js-card" data-id="Mercedes Benz E-Class" data-model="Mercedes Benz E-Class">
+          <figure class="card-figure"> <img src="images/chauffeur-mercedes-benz-e200.jpg" alt="Mercedes Benz E-Class Picture"/> </figure>
+          <div class="card-body">
+            <h4 class="card-title">Mercedes Benz E-Class</h4>
+            <div class="card-features">
+              <ul>
+                <li><span class="icon icon--passenger"></span>3 Guests</li>
+                <li><span class="icon icon--luggage"></span>2 Large 2 Small</li>
+              </ul>
+            </div>
+            <div class="card-pricing">
+              <div class="card-pricing-block">
+                <div class="small">Hourly</div>
+                <div class="card-pricing-value">$<span class="card-hourly">53.50</span></div>
+              </div>
+              <div class="card-pricing-block">
+                <div class="small">One Way</div>
+                <div class="card-pricing-value">$<span class="card-pertrip">58.50</span></div>
+              </div>
+              <div class="seasonal-price-block" style="display:none">
+                <div class="price-title">2016 F1 Singapore Grand Prix</div>
+                <div class="card-seasonal-disposal">75.00</div>
+                <div class="card-seasonal-transfer">75.00</div>
+                <div class="minhours">10</div>
+                <div class="startSeason">Sept 14, 2016</div>
+                <div class="endSeason">Sept 19, 2016</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-button"> <span class="icon icon--tick"></span> Select </div>
+          </a> </li>
+        <li> <a href="#" class="card js-card" data-id="Toyota Alphard" data-model="Toyota Alphard">
+          <figure class="card-figure"> <img src="images/chauffeur-toyota-alphard.jpg" alt="Toyota Alphard Picture"/> </figure>
+          <div class="card-body">
+            <h4 class="card-title">Toyota Alphard</h4>
+            <div class="card-features">
+              <ul>
+                <li><span class="icon icon--passenger"></span>5 Guests</li>
+                <li><span class="icon icon--luggage"></span>4 Large</li>
+              </ul>
+            </div>
+            <div class="card-pricing">
+              <div class="card-pricing-block">
+                <div class="small">Hourly</div>
+                <div class="card-pricing-value">$<span class="card-hourly">58.85</span></div>
+              </div>
+              <div class="card-pricing-block">
+                <div class="small">One Way</div>
+                <div class="card-pricing-value">$<span class="card-pertrip">60.00</span></div>
+              </div>
+              <div class="seasonal-price-block" style="display:none">
+                <div class="price-title">2016 F1 Singapore Grand Prix</div>
+                <div class="card-seasonal-disposal">75.00</div>
+                <div class="card-seasonal-transfer">75.00</div>
+                <div class="minhours">10</div>
+                <div class="startSeason">Sept 14, 2016</div>
+                <div class="endSeason">Sept 19, 2016</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-button"> <span class="icon icon--tick"></span> Select </div>
+          </a> </li>
+        <li> <a href="#" class="card js-card" data-id="Minibus (13 seater)" data-model="Minibus (13 seater)">
+          <figure class="card-figure"> <img src="images/chauffeur-toyota-hiace.jpg" alt="Minibus (13 seater) Picture"/> </figure>
+          <div class="card-body">
+            <h4 class="card-title">Minibus (13 seater)</h4>
+            <div class="card-features">
+              <ul>
+                <li><span class="icon icon--passenger"></span>12 Guests</li>
+              </ul>
+            </div>
+            <div class="card-pricing">
+              <div class="card-pricing-block">
+                <div class="small">Hourly</div>
+                <div class="card-pricing-value">$<span class="card-hourly">80.00</span></div>
+              </div>
+              <div class="card-pricing-block">
+                <div class="small">One Way</div>
+                <div class="card-pricing-value">$<span class="card-pertrip">80.00</span></div>
+              </div>
+              <div class="seasonal-price-block" style="display:none">
+                <div class="price-title">2016 F1 Singapore Grand Prix</div>
+                <div class="card-seasonal-disposal">75.00</div>
+                <div class="card-seasonal-transfer">75.00</div>
+                <div class="minhours">10</div>
+                <div class="startSeason">Sept 14, 2016</div>
+                <div class="endSeason">Sept 19, 2016</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-button"> <span class="icon icon--tick"></span> Select </div>
+          </a> </li>
+        <li> <a href="#" class="card js-card" data-id="Coach (44 seater)" data-model="Coach (44 seater)">
+          <figure class="card-figure"> <img src="images/chauffeur-coach-44.jpg" alt="Coach (44 seater) Picture"/> </figure>
+          <div class="card-body">
+            <h4 class="card-title">Coach (44 seater)</h4>
+            <div class="card-features">
+              <ul>
+                <li><span class="icon icon--passenger"></span>44 Guests</li>
+              </ul>
+            </div>
+            <div class="card-pricing">
+              <div class="card-pricing-block">
+                <div class="small">Hourly</div>
+                <div class="card-pricing-value">$<span class="card-hourly">138.00</span></div>
+              </div>
+              <div class="card-pricing-block">
+                <div class="small">One Way</div>
+                <div class="card-pricing-value">$<span class="card-pertrip">138.00</span></div>
+              </div>
+              <div class="seasonal-price-block" style="display:none">
+                <div class="price-title">2016 F1 Singapore Grand Prix</div>
+                <div class="card-seasonal-disposal">75.00</div>
+                <div class="card-seasonal-transfer">75.00</div>
+                <div class="minhours">10</div>
+                <div class="startSeason">Sept 14, 2016</div>
+                <div class="endSeason">Sept 19, 2016</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-button"> <span class="icon icon--tick"></span> Select </div>
+          </a> </li>
+        <li> <a href="#" class="card js-card" data-id="Luggage Van" data-model="Luggage Van">
+          <figure class="card-figure"> <img src="images/chauffeur-nissan-urvan.jpg" alt="Luggage Van Picture"/> </figure>
+          <div class="card-body">
+            <h4 class="card-title">Luggage Van</h4>
+            <div class="card-features">
+              <ul>
+                <li><span class="icon icon--luggage"></span>8 Large 10 Small</li>
+              </ul>
+            </div>
+            <div class="card-pricing">
+              <div class="card-pricing-block">
+                <div class="small">Hourly</div>
+                <div class="card-pricing-value">$<span class="card-hourly">85.60</span></div>
+              </div>
+              <div class="card-pricing-block">
+                <div class="small">One Way</div>
+                <div class="card-pricing-value">$<span class="card-pertrip">85.60</span></div>
+              </div>
+              <div class="seasonal-price-block" style="display:none">
+                <div class="price-title">2016 F1 Singapore Grand Prix</div>
+                <div class="card-seasonal-disposal">75.00</div>
+                <div class="card-seasonal-transfer">75.00</div>
+                <div class="minhours">10</div>
+                <div class="startSeason">Sept 14, 2016</div>
+                <div class="endSeason">Sept 19, 2016</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-button"> <span class="icon icon--tick"></span> Select </div>
+          </a> </li>
+      </ul>
+      <!-- /.l-browse-list --> 
+    </div>
+    <!-- /.l-browse-cards --> 
+  </div>
+  <!-- #main -->
+  
+  <div class="selectionPane js-selectionWidget-pane">
+    <form id="chauffeur_form" action="https://www.Bocar.sg/chauffeur-select" onsubmit="return checkForm();" method="get" >
+      <div class="selectionPane-header mobile-hidden">
+        <div class="contain"> <a class="button button--pri right" style="min-width:140px;" id="chauffeur_submit">Next</a>
+          <h5 class="selectionPane-title">Selected Car (min. 3 hour charge for Hourly mode) </h5>
+        </div>
+      </div>
+      <div class="selectionPane-body">
+        <div class="contain">
+          <div class="selectionPane-form">
+            <figure class="selectionPane-form-block selectionPane-form-image mobile-hidden"> <img src="images/default/carpic.jpg" alt=""/> </figure>
+            <div class="selectionPane-form-fields mobile-hidden">
+              <h4 class="js-selectionPane-model"></h4>
+              <span class="date_error"> Pickup time cannot be later than return time.</span>
+              <div class="cols">
+                <input type="hidden" name="model" id="model" />
+                <div class="selectionPane-form-block selectionPane-form-mode">
+                  <div class="controlGroup">
+                    <label for="mode">Mode <span class='required'>*</span></label>
+                    <div class="selector">
+                      <select name="mode" id="mode">
+                        <option value="Hourly">Hourly</option>
+                        <option value="PerTrip">Per Trip</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="js-datepicker-group">
+                  <div class="selectionPane-form-block selectionPane-form-datepicker">
+                    <div class="controlGroup">
+                      <label for="startdate">Pickup Date <span class='required'>*</span></label>
+                      <div class="cols">
+                        <div class="col-6">
+                          <input class="datepicker js-datepicker-from" placeholder="Any" readonly="1" type="text" name="startdate" id="startdate" />
+                        </div>
+                        <div class="col-6 col-last">
+                          <div class="selector">
+                            <select name="starttime" id="starttime">
+                              <option value="00:00">12:00 AM</option>
+                              <option value="00:30">12:30 AM</option>
+                              <option value="01:00">1:00 AM</option>
+                              <option value="01:30">1:30 AM</option>
+                              <option value="02:00">2:00 AM</option>
+                              <option value="02:30">2:30 AM</option>
+                              <option value="03:00">3:00 AM</option>
+                              <option value="03:30">3:30 AM</option>
+                              <option value="04:00">4:00 AM</option>
+                              <option value="04:30">4:30 AM</option>
+                              <option value="05:00">5:00 AM</option>
+                              <option value="05:30">5:30 AM</option>
+                              <option value="06:00">6:00 AM</option>
+                              <option value="06:30">6:30 AM</option>
+                              <option value="07:00">7:00 AM</option>
+                              <option value="07:30">7:30 AM</option>
+                              <option value="08:00">8:00 AM</option>
+                              <option value="08:30">8:30 AM</option>
+                              <option value="09:00">9:00 AM</option>
+                              <option value="09:30">9:30 AM</option>
+                              <option value="10:00">10:00 AM</option>
+                              <option value="10:30">10:30 AM</option>
+                              <option value="11:00">11:00 AM</option>
+                              <option value="11:30">11:30 AM</option>
+                              <option value="12:00">12:00 PM</option>
+                              <option value="12:30">12:30 PM</option>
+                              <option value="13:00">1:00 PM</option>
+                              <option value="13:30">1:30 PM</option>
+                              <option value="14:00">2:00 PM</option>
+                              <option value="14:30">2:30 PM</option>
+                              <option value="15:00">3:00 PM</option>
+                              <option value="15:30">3:30 PM</option>
+                              <option value="16:00">4:00 PM</option>
+                              <option value="16:30">4:30 PM</option>
+                              <option value="17:00">5:00 PM</option>
+                              <option value="17:30" selected="selected">5:30 PM</option>
+                              <option value="18:00">6:00 PM</option>
+                              <option value="18:30">6:30 PM</option>
+                              <option value="19:00">7:00 PM</option>
+                              <option value="19:30">7:30 PM</option>
+                              <option value="20:00">8:00 PM</option>
+                              <option value="20:30">8:30 PM</option>
+                              <option value="21:00">9:00 PM</option>
+                              <option value="21:30">9:30 PM</option>
+                              <option value="22:00">10:00 PM</option>
+                              <option value="22:30">10:30 PM</option>
+                              <option value="23:00">11:00 PM</option>
+                              <option value="23:30">11:30 PM</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="selectionPane-form-block selectionPane-form-datepicker">
+                    <div class="controlGroup">
+                      <label for="enddate">Return Date <span class='required'>*</span></label>
+                      <div class="cols">
+                        <div class="col-6">
+                          <input class="datepicker js-datepicker-to" placeholder="Any" readonly="1" type="text" name="enddate" id="enddate" />
+                        </div>
+                        <div class="col-6 col-last">
+                          <div class="selector">
+                            <select name="endtime" id="endtime">
+                              <option value="00:00">12:00 AM</option>
+                              <option value="00:30">12:30 AM</option>
+                              <option value="01:00">1:00 AM</option>
+                              <option value="01:30">1:30 AM</option>
+                              <option value="02:00">2:00 AM</option>
+                              <option value="02:30">2:30 AM</option>
+                              <option value="03:00">3:00 AM</option>
+                              <option value="03:30">3:30 AM</option>
+                              <option value="04:00">4:00 AM</option>
+                              <option value="04:30">4:30 AM</option>
+                              <option value="05:00">5:00 AM</option>
+                              <option value="05:30">5:30 AM</option>
+                              <option value="06:00">6:00 AM</option>
+                              <option value="06:30">6:30 AM</option>
+                              <option value="07:00">7:00 AM</option>
+                              <option value="07:30">7:30 AM</option>
+                              <option value="08:00">8:00 AM</option>
+                              <option value="08:30">8:30 AM</option>
+                              <option value="09:00">9:00 AM</option>
+                              <option value="09:30">9:30 AM</option>
+                              <option value="10:00">10:00 AM</option>
+                              <option value="10:30">10:30 AM</option>
+                              <option value="11:00">11:00 AM</option>
+                              <option value="11:30">11:30 AM</option>
+                              <option value="12:00">12:00 PM</option>
+                              <option value="12:30">12:30 PM</option>
+                              <option value="13:00">1:00 PM</option>
+                              <option value="13:30">1:30 PM</option>
+                              <option value="14:00">2:00 PM</option>
+                              <option value="14:30">2:30 PM</option>
+                              <option value="15:00">3:00 PM</option>
+                              <option value="15:30">3:30 PM</option>
+                              <option value="16:00">4:00 PM</option>
+                              <option value="16:30">4:30 PM</option>
+                              <option value="17:00">5:00 PM</option>
+                              <option value="17:30" selected="selected">5:30 PM</option>
+                              <option value="18:00">6:00 PM</option>
+                              <option value="18:30">6:30 PM</option>
+                              <option value="19:00">7:00 PM</option>
+                              <option value="19:30">7:30 PM</option>
+                              <option value="20:00">8:00 PM</option>
+                              <option value="20:30">8:30 PM</option>
+                              <option value="21:00">9:00 PM</option>
+                              <option value="21:30">9:30 PM</option>
+                              <option value="22:00">10:00 PM</option>
+                              <option value="22:30">10:30 PM</option>
+                              <option value="23:00">11:00 PM</option>
+                              <option value="23:30">11:30 PM</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="selectionPane-form-block selectionPane-form-charges">
+                  <div class="controlGroup">
+                    <label>Est. Charge</label>
+                    <span class="card-pricing-value">$8888.88</span> </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-visible">
+              <input type="submit" value="Next" class="button button--pri button--md button--block" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- #main-container --> 
+<script>
+function parseDateTime(date){
+	var comps = date.split(' ');
+	
+	if (comps.length == 2){
+		var dateParts = comps[0].split('-');
+		var timeParts = comps[1].split(':');
+		
+		return new Date(
+			dateParts[0],
+			(dateParts[1] - 1),
+			dateParts[2],
+			timeParts[0], timeParts[1], timeParts[2], 0
+		);
+	}else{
+		throw "Could not parse date: " + date;
+	}
+}
+
+function checkForm(){
+	if($('#startdate').datepicker('getDate') && $('#enddate').datepicker('getDate')){
+		var d1 = $('#startdate').datepicker('getDate').format('yyyy-mm-dd');
+		var d2 = $('#enddate').datepicker('getDate').format('yyyy-mm-dd');
+		var startDate  = parseDateTime(d1 + " " + $('#starttime').val() + ":00");
+		var endDate  = parseDateTime(d2 + " " + $('#endtime').val() + ":00");
+		var tfhours     = new Date(new Date().getTime() + (24 * 3600000));
+
+		if(tfhours>=startDate){
+			alert("For bookings less than 24 hours away, please call our customer service hotline at (+65) 6655-7701");
+			return false;
+		}
+		
+		if (new Date(startDate).getTime() > new Date(endDate).getTime()){		
+			$('.date_error').show();
+			return false;
+		}
+
+		// seasonal prompt
+		var seasonStart = new Date("2016-09-14").getTime();
+		var seasonEnd 	= new Date("2016-09-19").getTime();
+		
+		if ((new Date(startDate).getTime() > seasonStart) && (new Date(startDate).getTime() < seasonEnd)) {		
+			return confirm("The period you selected falls during the 2016 F1 Singapore Grand Prix, surcharges applies. Click <OK> to proceed");			
+		}
+
+		if ((new Date(endDate).getTime() > seasonStart) && (new Date(endDate).getTime() < seasonEnd)) {			
+			return confirm("The period you selected falls during the 2016 F1 Singapore Grand Prix, surcharges applies. Click <OK> to proceed");
+		}
+	
+
+		$('.date_error').hide();
+		return true;
+	}else if($('#startdate').datepicker('getDate')){
+		var d1 = $('#startdate').datepicker('getDate').format('yyyy-mm-dd');
+		var startDate  = parseDateTime(d1 + " " + $('#starttime').val() + ":00");
+		var tfhours     = new Date(new Date().getTime() + (24 * 3600000));
+		
+		if(tfhours>=startDate){
+			alert("For bookings less than 24 hours away, please call our customer service hotline at (+65) 6655-7701");
+			return false;
+		}
+	}
+	return true;
+}
+
+$(document).ready(function(){
+	initSelectionWidget();
+	$('#chauffeur_submit').click(function(){
+		
+		$('#chauffeur_form').submit();
+	});
+});
+</script><!-- End of #main-container -->
+
+<div id="footer">
+  <div class="footer-container">
+    <footer>
+      <div class="footer-main">
+        <div class="contain">
+          <div class="footer-social"> <span class="h3 footer-social-title">Follow us! We're friendly:</span>
+            <ul class="social-network social-circle">
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" class="icoRss" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+              <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <div class="col-2">
+              <h4>Discover</h4>
+              <ul>
+                <li><a href="#" id="footer_shorterm_link"><i class="fa fa-caret-right" aria-hidden="true"></i> Short Term Self Bocar</a></li>
+                <li><a href="#" id="footer_longterm_link"><i class="fa fa-caret-right" aria-hidden="true"></i> Long Term Car Leasing</a></li>
+                <li><a href="#" id="footer_chauffeur_link"><i class="fa fa-caret-right" aria-hidden="true"></i> Chauffeur Service</a></li>
+                <li><a href="#" id="footer_international_link"><i class="fa fa-caret-right" aria-hidden="true"></i> Worldwide Car Rental</a></li>
+                <li><a href="#" id="footer_wedding_link"><i class="fa fa-caret-right" aria-hidden="true"></i> Wedding Car Rental</a></li>
+                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Bocar to Malaysia</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>Customer Service</h4>
+              <ul>
+                <li><a href="help.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Help</a></li>
+                <li><a href="terms-and-conditions.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Terms and Conditions</a></li>
+                <li><a href="quick-payment.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Quick Payment</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>We're BoCar.SG</h4>
+              <ul>
+                <li><a href="our-team.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Our Team</a></li>
+                <li><a href="partners.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Our Partners</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>Need Help?</h4>
+              <ul class="footer-enquirylist footer-subsection">
+                <li class="footer-contactheaders"><b>For General Enquiries</b><br/>
+                  Weekdays 10am to 7pm:</li>
+                <li><a href="#"><span class="footer-contactlink" style="text-decoration: underline;">Contact Us Here</span></a></li>
+              </ul>
+              ​
+              <ul class="footer-subsection">
+                <li class="footer-contactheaders"><b>For Emergency Services</b><br/>
+                </li>
+                <li><span class="footer-contacttext">(+65)  9999 - 9999</span></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>Get The App</h4>
+              <a class="footer-appButton" href="#"><img src="images/app-store.png" alt="" /> </a> <a class="footer-appButton" href="#"><img src="images/google-play.png" alt="" /> </a> </div>
+            <div class="col-2 col-last"> <img src="images/footer-mobile-devices.jpg" alt="" /> </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <div class="contain tiny">Copyright 2014-2016 © BoCar.sg</div>
+      </div>
+    </footer>
+  </div>
+  <div class="popup" data-popup="ad-popup" style="display:none;">
+    <div class="popup-inner">
+      <div id="adimgsrc"></div>
+      <!-- <p><a data-popup-close="ad-popup" href="#">Close</a></p> --> 
+      <a class="popup-close" data-popup-close="ad-popup" href="#">x</a> </div>
+  </div>
+</div>
+
+<!-- Google Code for Remarketing Tag --> 
+</body>
+
+<!-- Mirrored from www.Bocar.sg/chauffeur-service by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Sep 2016 05:57:31 GMT -->
+</html>

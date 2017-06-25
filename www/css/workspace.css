@@ -1,0 +1,405 @@
+/* account_menu CSS */
+
+div.account_menu div.content {
+	padding:5px 0px;
+	font-size: 12px;
+	margin-bottom:0px;
+}
+div.account_menu div.content p {
+	margin:0;
+	padding:8px 10px 8px 18px;
+	cursor:pointer;
+}
+div.account_menu div.content p:hover {
+	background-color:#FFF;
+}
+div.account_menu div.contentfaux {
+	padding:5px 15px;
+	font-size: 12px;
+	margin-bottom:0px;
+}
+div.account_menu div.contentfaux p {
+	margin-top:5px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+div.account_menu div.content p img,
+div.account_menu div.contentfaux p img,
+div.account_menu div.header img,
+div.account_menu div.headerfaux img,
+div.account_menu div.headerfaux_top img {
+	margin-right:7px;
+	display:inline-block;
+	vertical-align:middle;
+}
+div.account_menu div.content p a,
+div.account_menu div.contentfaux p a {
+	display:inline-block;
+	vertical-align:middle;
+	color:#000;
+}
+
+#content_wrapper div.account_look table tr,
+#content_wrapper div.account_look table tr td,
+#content_wrapper div.account_main table.non tr,
+#content_wrapper div.account_main table.non tr td,
+#content_wrapper div.account_register table tr,
+#content_wrapper div.account_register table tr td {
+	background:none;
+	background-color:transparent;
+	vertical-align:top;
+	border:none;
+}
+#content_wrapper div.account_look table tr th,
+#content_wrapper div.account_look table tr th label,
+#content_wrapper div.account_main table.non tr th,
+#content_wrapper div.account_main table.non tr th label,
+#content_wrapper div.account_register table tr th,
+#content_wrapper div.account_register table tr th label {
+	background:none;
+	background-color:transparent;
+	vertical-align:top;
+	color:#3c3c3c;
+	text-shadow:none;
+	font-weight:bold;
+	font-size:15px;
+}
+
+#content_wrapper div.account_look table tr td,
+#content_wrapper div.account_look table tr td label,
+#content_wrapper div.account_main table.non tr td,
+#content_wrapper div.account_main table.non tr td label {
+	background-color: transparent; /*#f3f3ff*/
+	background:none;
+	color:#3c3c3c;
+	border:none;
+}
+
+div.adminHeading {
+	background: url(../images/account_look_boxtop_bg1.png) repeat-x;
+	background-position:center;
+	cursor:default;
+	
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	
+	-moz-box-shadow: 0px 1px 3px #ccc;
+	-webkit-box-shadow: 0px 1px 3px #ccc;
+	box-shadow: 0px 1px 3px #ccc;
+	z-index:90;
+}
+div.adminHeading h2, h2.adminHeading {
+	line-height:0.5em; margin-left:0px; margin-bottom:0px;
+	/*padding:3px 10px 2px 10px;*/
+	color:#fff; /*333;*/
+	cursor:default;
+	text-shadow:none;
+	width:690px;
+	padding:10px;
+	font-size:22px;
+}
+table.workspacePanel{
+	font-size: 12px; width: 100%;
+}
+.expiredHeader {
+	color:#FF0000;
+}
+
+.inner_wrapper .account_main .adminHeading h5.adminHeadingRight {
+	display:inline-block;
+	font-size:15px;
+	font-weight:bold;
+	height:22px; /*25*/
+	padding:4px 8px 3px 12px;
+	color:#fff;
+	text-shadow:none;
+	width:690px;
+}
+.purple_box {
+	width:330px; float:left; font-size:17px; padding-top:10px;
+}
+.purple_box_content {
+	width:318px; float:left; height:280px; padding:0px 5px 2px 5px;
+	background:url(../images/purplebox_bg.png) #fffefe repeat-x;
+	background-position:bottom;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	border-left:1px solid #e2e2e2; /*F3F3FF ;*/
+	border-right:1px solid #e2e2e2; /*F3F3FF ;*/
+	border-bottom:1px solid #e2e2e2; /*F3F3FF ;*/
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+div.quickbuttons {
+	float:none; margin-top:0px; margin-bottom:10px;
+	padding:8px 10px;
+	background-color:#FFF;
+	border-bottom:1px solid #ccc;
+	z-index:1;
+}
+div.account_main div.content {
+	padding:0 10px;
+}
+
+/********************************/
+/* BookMgt/changeVehicleSuccess */
+
+.account_main div div.p_less {
+	display:inline-block; width:520px; vertical-align:top;
+}
+.account_main div div.p_less p {
+	margin:0;
+	font-size:13px;
+	vertical-align:top;
+}
+.account_main div div.p_less p span.heading {
+	display:inline-block;
+	width:150px;
+	margin-right:10px;
+	font-weight:bold;
+}
+.carSummary {
+	vertical-align:top;
+	height:150px;
+	margin-top:0px;
+	margin-bottom:10px;
+	padding:30px 0 10px 10px;
+	border:1px solid #DED1F9;
+	box-shadow:0 0 1px #999;
+	-moz-box-shadow: 0px 0px 1px #999;
+	-webkit-box-shadow: 0px 0px 1px #999;
+	/*border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;*/
+	background-color:#fff;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+.carSummary img {
+	box-shadow:0 0 5px #999;
+	-moz-box-shadow: 0px 0px 5px #999;
+	-webkit-box-shadow: 0px 0px 5px #999;
+}
+
+/*********************************/
+/* BookMgt/changeVehicleSuccess + CarMgt/availableCarSuccess*/
+
+#loadDiv > div.loadingMsg{
+	text-align:center;
+}
+#loadDiv > div.loadingMsg > img {
+	display:block;
+	margin:5px auto;
+}
+
+/************************/
+/* CarMgt/showSchedulerSuccess */
+
+#inline_pop table tr th,
+#inline_pop table tr td {
+	text-align:center;
+}
+.snappable {
+}
+.booking {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.booking_good {
+	border: 1px solid #000;
+	background-image: url("../images/stripe-01.png");
+	/*color: #FDED22;*/
+	color: #000000;
+}
+.booking_bad {
+	border: 1px solid #000;
+	background-image: url("../images/stripe-03.png");
+	color: #FFFFFF;
+}
+.booking_mod {
+	border: 1px solid #000;
+	background-image: url("../images/stripe-04.png");
+	color: #FFFFFF;
+}
+.partial {
+	border: 1px dashed #000000;
+	background-image: url("../images/stripe-02.png");
+	color: #000000;
+}
+
+div#inline_pop_scheduler {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background: #fff;
+	/*background:url('/images/colorbox/transparent_overlay.png');*/
+	text-align:center;
+	overflow:auto;
+	z-index: 100;
+}
+
+table#schedule_table {
+	margin:0 auto;
+	border-style: none;
+	border-width: 0px;
+}
+div#inline_pop_scheduler table {
+	margin:50px auto;
+	border-style: none;
+	border-width: 0px;
+}
+#nextButton {
+	display:block;
+	position:absolute;
+	top:10px;
+	left:90px;
+	cursor:pointer;
+}
+#backButton {
+	display:inline-block;
+	position:absolute;
+	top:10px;
+	left:5px;
+	cursor:pointer;
+}
+#saveButton {
+	display:inline-block;
+	position:absolute;
+	top:10px;
+	right:205px;
+	cursor:pointer;
+}
+#resetButton {
+	display:inline-block;
+	position:absolute;
+	top:10px;
+	right:115px;
+	cursor:pointer;
+}
+#closeButton {
+	display:inline-block;
+	position:absolute;
+	top:10px;
+	right:30px;
+	cursor:pointer;
+}
+/*********************************/
+/* CarMgt/rentSuccess + CarMgt/editRentSuccess */
+
+#content_wrapper div.account_main div.content div.rent_template table.non {
+	position:relative;
+}
+#content_wrapper div.account_main div.content div.rent_template table.non tr:nth-child(9) th,
+#content_wrapper div.account_main div.content div.rent_template table.non tr:nth-child(9) td {
+	padding-top:45px;
+}
+#content_wrapper div.account_main div.content div.rent_template table.non tr:nth-child(5) th,
+#content_wrapper div.account_main div.content div.rent_template table.non tr:nth-child(5) td {
+	padding-top:45px;
+}
+#content_wrapper div.account_main div.content div.rent_template table.non tr:nth-child(1) th,
+#content_wrapper div.account_main div.content div.rent_template table.non tr:nth-child(1) td {
+	padding-top:30px;
+}
+#content_wrapper div.account_main div.content div#note1 {
+	position:absolute;
+	width:700px;
+	top:0px
+}
+#content_wrapper div.account_main div.content div#note2 {
+	position:absolute;
+	width:700px;
+	top:240px
+}
+#content_wrapper div.account_main div.content div#note3 {
+	position:absolute;
+	width:700px;
+	top:470px
+}
+#content_wrapper div.account_main div.content div#note1 h6,
+#content_wrapper div.account_main div.content div#note2 h6, 
+#content_wrapper div.account_main div.content div#note3 h6 {
+	margin-left:5px;
+}
+#content_wrapper div.account_main div.content div.alert_info {
+	float:right;
+	width:230px;
+	margin-top:0;
+	font-size:12px;
+}
+
+/**********************/
+/* CarMgt/showSuccess */
+
+/* TAKE EXTRA NOTE! IT IS AFFECTING OTHER MODULES IN WORKSPACE */
+#content_wrapper div.account_main div.content p {
+	margin:0 auto; padding:0 auto; font-size:13px; 	/* TAKE NOTE SEE IF THE MARGIN AND PADDING IS NEEDED*/
+}
+#content_wrapper div.account_main div.content p.heading_short {
+	width:70px; display:inline-block; margin-right:10px; font-weight:bold; vertical-align:middle;
+}
+#content_wrapper div.account_main div.content p.heading_long {
+	width:25%; display:inline-block; margin-right:10px; font-weight:bold; vertical-align:middle;
+}
+#content_wrapper div.account_main div.content p.detail_short {
+	width:100px; display:inline-block; margin-right:30px; vertical-align:middle; font-size:14px;
+}
+#content_wrapper div.account_main div.content p.detail_long {
+	width:25%; display:inline-block; margin-right:30px; vertical-align:middle; font-size:14px;
+}
+#content_wrapper div.account_main div.content p.detail_longest {
+	width:300px; display:inline-block; margin-right:30px; vertical-align:middle; font-size:14px;
+}
+#content_wrapper div.account_main div.content p.detail_extend {
+	width:auto; display:inline-block; margin-right:30px; vertical-align:middle; font-size:14px;
+}
+
+/*****************************/
+/* EnquiryMgt/approveSuccess */
+
+#content_wrapper div.account_main div.content div.carSummary { /* NOTE CLASH!! (addressed) */
+	padding:30px 0 10px 20px;
+}
+
+/* Loading Overlay*/
+.loading-indicator {
+	height: 80px;
+	width: 80px;
+	background: url( '../images/loading.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	}
+.loading-indicator::after {
+	content: "Saving details to the Server. Please wait....";
+    padding-top: 10px;
+    display: block;
+    width: 300px;
+    top: 50px;
+    left: -80px;
+    position: absolute;
+}
+.loading-indicator-overlay {
+	background-color: #FFFFFF;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+}
+
+#content_wrapper div.account_main div.content .notification p{
+	font-size: 14px;
+    margin: 0 0 1.375em;
+}

@@ -3,67 +3,113 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
 <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
-<title>BOCAR</title>
 <meta name="title" content="" />
-<link rel="shortcut icon" href="images/fav.png" />
-<link rel="image_src" href="images/logo_share.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
-<link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600,600italic,700italic,700,900" rel="stylesheet" type="text/css" />
-
+<title>BOCAR</title>
 <style type="text/css">
 #startdate, #enddate {
 	z-index:9;
 }
-html {
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%
-}
-
-.bg-slider-img {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  height:18.8%;
-  width: 100%;
-  background-size: cover;
-}
-.bg-slider-img img{
-	width:100%;
-}
 </style>
-
+<link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600,600italic,700italic,700,900" rel="stylesheet" type="text/css" />
 <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen" />
 	<script type="text/javascript" src="/js/vendor/es5-shim.min.js"></script>
 <![endif]-->
 
-
-<!--<link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>-->
+<link rel="shortcut icon" href="images/fav.png" />
+<link rel="image_src" href="images/logo_share.png" />
 
 <!-- SEO canonical tag -->
 <link rel="canonical" href="index.html" />
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script src="js/mini-jquery-bgswitcher.js"></script> 
-
-
-
 </head>
-<body class="homepage">
-<!--- Slider --->
-<script>
-var images = ['images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.jpg', 'images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.jpg'];
-  bgSlider({images:images, animDuration:1000, slideDuration:6000});
-</script>
-<!--- END Slider --->
+<body class="homepage home pageIndex">
+
+<!--	<link rel="stylesheet" type="text/css" href="css/indySliceSlider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.indySliceSlider.js"  type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(function ($) {
+
+
+			$('#indy-slice-slider').indySliceSlider();
+
+
+		});
+	</script>
+
+
+<section id="indy-slice-slider" class="indy-slice-slider slider-template">
+
+						<section class="slide-container">
+
+							<article class="slice-slide active">
+
+								<section class="slice-part" >
+									<section class="slice-img-container">
+										<section class="slice-img" style="background-image:url(images/banner-homepage-min-old.jpg);"></section>
+									</section>
+								</section>
+
+							</article>
+
+							<article class="slice-slide prev">
+
+								<section class="slice-part">
+									<section class="slice-img-container">
+										<section class="slice-img" style="background-image:url(images/banner-homepage-min.jpg);"></section>
+									</section>
+								</section>
+
+							</article>
+
+							
+                            <article class="slice-slide active">
+
+								<section class="slice-part" >
+									<section class="slice-img-container">
+										<section class="slice-img" style="background-image:url(images/banner-homepage-min-old.jpg);"></section>
+									</section>
+								</section>
+
+							</article>
+
+							<article class="slice-slide prev">
+
+								<section class="slice-part">
+									<section class="slice-img-container">
+										<section class="slice-img" style="background-image:url(images/banner-homepage-min.jpg);"></section>
+									</section>
+								</section>
+
+							</article>
+						</section>
+					</section>-->
+
+
+
+
+
+<!--<noscript>
+<div class="cols" style='height: 100%; min-height: 250px; margin: 0 auto; text-align: left; padding: 30px; overflow: hidden; color: black;'>
+  <div class="carsonTip carsonTip--sad">
+    <div style="width: 100%" class="carsonTip-content">
+      <h1 class="h2" style="margin: 0; color: #ccc">BoCar.SG - We apologise for the hiccup!</h1>
+      <p> We noticed that your browser's JavaScript is turned off. Please
+        enable this functionality though your browser settings to visit
+        the site.<br />
+        <br />
+        If you keep getting this error, or if you
+        have an urgent request, please e-mail us at <a href="#">#</a> or call us at 6655-7701. </p>
+    </div>
+  </div>
+</div>
+</noscript>-->
+
 <!-- Begin template wrapper -->
+
 
 <div id="wrapper"> 
   <!-- Begin header -->
@@ -72,7 +118,7 @@ var images = ['images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.
       <header class="header contain clearfix"> 
       <a class="logo header-logo" href="index.html"> 
       <img class="mobile-hidden" src="images/logo.png" alt="BoCar.SG" /> 
-      <img class="mobile-visible" src="images/logo.png" alt="BoCar.SG"/> </a>
+      <img class="mobile-visible" src="images/logo.%402x.png" alt="BoCar.SG"/> </a>
         <div class="mobile-hidden">
           <nav class="mainNav header-nav">
             <ul>
@@ -81,9 +127,9 @@ var images = ['images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.
           </nav>
           <div class="subNav header-nav subNav--buttons"> 
           <a class="button button--text button--md" href="#"><img src="images/about.png" alt="" /> About Us</a> 
-          <a class="button button--text button--md" href="login.html"><img src="images/login.png" alt="" /> Log in</a> 
-          <a class="button button--md button--inverse" href="register.html"><img src="images/sign-up.png" alt="" /> Sign Up Free</a>
-          <a class="button button--text button--md" href="browse-rental-cars.html"><img src="images/browse.png" alt="" /> Browse</a> </div>
+          <a class="button button--text button--md" href="#"><img src="images/login.png" alt="" /> Log in</a> 
+          <a class="button button--md button--inverse" href="#"><img src="images/sign-up.png" alt="" /> Sign Up Free</a>
+          <a class="button button--text button--md" href="#"><img src="images/browse.png" alt="" /> Browse</a> </div>
         </div>
         <div class="mobile-visible"> <a class="mobileNav-toggle js-mobileNav-toggle" href="#"><span class="icon icon--close"></span></a> </div>
       </header>
@@ -91,15 +137,15 @@ var images = ['images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.
     <div class="mobileNav">
       <div class="mobileNav-header">
         <ul class="mobileNav-public mobileNav-menu">
-          <li><a href="login.html">Log In</a></li>
-          <li><a href="register.html">Sign Up for Free</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Sign Up for Free</a></li>
           
         </ul>
       </div>
       <div class="mobileNav-main">
         <ul class="mobileNav-menu">
-          <li><a href="index.html" id="mobile_home_link" >Home</a></li>
-          <li><a href="browse-rental-cars.html" id="mobile_shortterm_link" >Browse</a></li>
+          <li><a href="#" id="mobile_home_link" >Home</a></li>
+          <li><a href="#" id="mobile_shortterm_link" >Browse</a></li>
           <li><a href="#" id="mobile_chauffeur_link">Chauffeur Service</a></li>
           <li><a href="#" id="mobile_longterm_link">Long Term Car Leasing</a></li>
           <li><a href="#">For New Driver</a></li>
@@ -194,8 +240,26 @@ var images = ['images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.
       <div class="pageBanner-more"> <a class="pageBanner-more-button" href="#"><span class="sprite sprite--more"></span></a> </div>
     </div>
     <div class="main clearfix"> 
-      
+      <!--<div class="landing-section" style="padding-bottom: 0;">
+        <div class="contain mentions">
+          <ul>
+            <li><a href="#"><span class="sprite sprite--tnooz" title="Tnooz"></span></a></li>
+            <li><a href="#"><span class="sprite sprite--theNewPaper" title="The New Paper"></span></a></li>
+            <li><a href="#"><span class="sprite sprite--e27" title="e27"></span></a></li>
+            <li><a href="#" title="TechCrunch"></span></a></li>
+            <li><a href="#" title="Cnet Japan"></span></a></li>
+            <li><span class="sprite sprite--hwm" title="Hardwarezone Magazine"></span></li>
+            <li><span class="sprite sprite--channel8" title="Channel 8"></span></li>
+            <li><a href="#"><span class="sprite sprite--yourstoryin" title="YourStory.IN"></span></a></li>
+          </ul>
+        </div>
+      </div>-->
       <div class="contain landing-section">
+        <!--<div class="promotion cols cols--tablet" style="margin-bottom:20px;"> 
+        <a href="#"><img class="phone-hidden" src="images/example/septpromo2016-home.jpg" alt="" /></a> 
+        <a href="#"><img class="phone-visible" src="images/example/septpromo2016-home-mobile.jpg" alt="" /></a> </div>-->
+        
+        
         
         <!----- Good Deals ---->
          <div class="landing-section">
@@ -379,6 +443,109 @@ var images = ['images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.
         </div>
       </div>
       <div id="popularCars" class="contain landing-section"></div>
+      
+      
+      
+      <!--<div class="main clearfix">
+        <div class="contain">
+            <h2 class="textCenter">Recommended By Our Customers</h2>
+            <div class="promotion promotion--slider js-slider">
+               <div class="slide">
+                    <a href="#" class="card"> <span class="tag card-tag">Most popular</span>
+                  <figure class="card-figure">
+                    <div class="card-callout">As low as <span>$80.25</span>/weekday</div>
+                    <img src="images/img-small.jpg" alt="toyota-altis-by-cl-leasing-443">
+                    <div class="card-overlay"> <i class="fa fa-map-marker" aria-hidden="true"></i>Bukit Batok </div>
+                  </figure>
+                  <div class="card-body">
+                    <h4 class="card-title">Toyota Altis</h4>
+                    <div class="card-features">
+                      <ul>
+                        <li><i class="fa fa-car" aria-hidden="true"></i> Sedan</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> 5</li>
+                        <br>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Malaysia</li>
+                        <li><i class="fa fa-eject" aria-hidden="true"></i><span class="path1"></span><span class="path2"></span></span>Probation</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-button" href="#">View car</div>
+                  </a>
+                </div>
+                <div class="slide">
+                    <a href="#" class="card"> <span class="tag card-tag">Most popular</span>
+                  <figure class="card-figure">
+                    <div class="card-callout">As low as <span>$80.25</span>/weekday</div>
+                    <img src="images/img-small(2).jpg" alt="honda-jazz-by-cl-leasing-451">
+                    <div class="card-overlay"> <i class="fa fa-map-marker" aria-hidden="true"></i>Bukit Batok </div>
+                  </figure>
+                  <div class="card-body">
+                    <h4 class="card-title">Honda Jazz</h4>
+                    <div class="card-features">
+                      <ul>
+                        <li><i class="fa fa-car" aria-hidden="true"></i> Hatchback</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> 5</li>
+                        <br>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Malaysia</li>
+                        <li><i class="fa fa-eject" aria-hidden="true"></i><span class="path1"></span><span class="path2"></span></span>Probation</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-button" href="#">View car</div>
+                  </a>
+                </div>
+                <div class="slide">
+                    <a href="#" class="card"> <span class="tag card-tag">Most popular</span>
+                  <figure class="card-figure">
+                    <div class="card-callout">As low as <span>$70.00</span>/weekday</div>
+                    <img src="images/img-small(3).jpg" alt="honda-fit-by-eazicar-832">
+                    <div class="card-overlay"> <i class="fa fa-map-marker" aria-hidden="true"></i>Bukit Batok </div>
+                  </figure>
+                  <div class="card-body">
+                    <h4 class="card-title">Honda Fit</h4>
+                    <div class="card-features">
+                      <ul>
+                        <li><i class="fa fa-car" aria-hidden="true"></i> Hatchback</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> 5</li>
+                        <br>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Malaysia</li>
+                        <li><i class="fa fa-eject" aria-hidden="true"></i><span class="path1"></span><span class="path2"></span></span>Probation</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-button" href="#">View car</div>
+                  </a>
+                </div>
+                <div class="slide">
+                    <a href="#" class="card"> <span class="tag card-tag">Most popular</span>
+                  <figure class="card-figure">
+                    <div class="card-callout">As low as <span>$70.00</span>/weekday</div>
+                    <img src="images/img-small(5).jpg" alt="honda-city-by-eazicar-833">
+                    <div class="card-overlay"> <i class="fa fa-map-marker" aria-hidden="true"></i>Bukit Batok </div>
+                  </figure>
+                  <div class="card-body">
+                    <h4 class="card-title">Honda City</h4>
+                    <div class="card-features">
+                      <ul>
+                        <li><i class="fa fa-car" aria-hidden="true"></i> Sedan</li>
+                        <li><i class="fa fa-user" aria-hidden="true"></i> 5</li>
+                        <br>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Malaysia</li>
+                        <li><i class="fa fa-eject" aria-hidden="true"></i><span class="path1"></span><span class="path2"></span></span>Probation</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-button" href="#">View car</div>
+                  </a>                    
+	            </div>       
+                
+                                              
+            </div>
+            <div class="textCenter"> <a class="button button--lg button--pri" href="#">Show me more</a> </div>
+        </div>
+        
+    </div>-->
+      
       
       <!----- Our customers love BoCar.SG ---->
       <div class="landing-section">
@@ -609,30 +776,36 @@ var images = ['images/banner-homepage-min-old.jpg', 'images/banner-homepage-min.
     </div>
   </div>
   
-
-<!-- End footer --> 
+  
+<!--  <div class="bootom">
+  <div class="bootom-u"><a href="#">★ Read Reviews</a></div>
+  </div>-->
+  
+  
+  
+  <!-- End footer --> 
 </div>
 <!-- End template wrapper --> 
 <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script> 
 <script type="text/javascript" src="js/vendor/jquery-ui-custom.min.js"></script> 
-<!--<script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+<script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> 
 <script type="text/javascript" src="js/vendor/selectize.min5e1f.js?v=2"></script> 
 <script type="text/javascript" src="js/vendor/moment.min.js"></script> 
 <script type="text/javascript" src="js/plugins3860.js?v=1"></script> 
 <script type="text/javascript" src="js/vendor/slick.min.js"></script> 
 <script type="text/javascript" src="js/vendor/jquery.ba-throttle-debounce.min.js"></script> 
-<!--<script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script> -->
+<script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script> 
 <script type="text/javascript" src="js/main.min.js"></script> 
-<!--<script type="text/javascript" src="js/vendor/picturefill.min.js"></script> -->
-<!--<script type="text/javascript" src="js/tiny_mce/tiny_mce.js"></script>
-<script type="text/javascript" src="js/tiny_mce/jquery.tinymce.js"></script>-->
+<script type="text/javascript" src="js/vendor/picturefill.min.js"></script> 
+<script type="text/javascript" src="js/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="js/tiny_mce/jquery.tinymce.js"></script>
 <!-- Google Tag Manager --> 
 
  
  
-
+<!-- end of yotpo widgets --> 
 
 </body>
 
-
+<!-- Mirrored from www.BoCar.SG/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Sep 2016 05:52:11 GMT -->
 </html>
