@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.rajan.rajan" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>new demo app</name>
+    <description>
+       test demo app.
+    </description>
+    <author email="dev@callback.apache.org" href="http://cordova.io">
+       rajnt team
+    </author>
+	<plugin name="org.apache.cordova.console" spec="0.2.11"/>
+    	<plugin name="org.apache.cordova.device" spec="0.2.3" />
+		 <plugin name="org.apache.cordova.inappbrowser"   />
+    	   <preference name="android-build-tool" value="ant|gradle" />
+
+    	<plugin name="cordova-plugin-googleplus" source="npm">
+  <param name="REVERSED_CLIENT_ID" value="952222804090-hluo557fqcuv6j8kojaer66fj7plpgr8.apps.googleusercontent.com" />
+</plugin>
+		
+		 
+    <access origin="*" />
+		 <preference name="phonegap-version" value="cli-6.5.0" /> 
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+</widget>
